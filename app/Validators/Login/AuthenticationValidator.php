@@ -12,9 +12,4 @@ class AuthenticationValidator extends BaseValidator
         'password'  => 'required|min:8',
     ];
     protected $messages     = [];
-
-    public function setParameters(array $parameters = [])
-    {
-        $this->parameters = $parameters;
-    }
 }

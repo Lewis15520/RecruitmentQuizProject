@@ -17,6 +17,12 @@ class BaseValidator
         $this->validator = Validator::class;
     }
 
+    public function setParameters(array $parameters = []): self
+    {
+        $this->parameters = array_merge($this->parameters, $parameters);
+        return $this;
+    }
+
     public function fails(): bool
     {
         $this->validate();

@@ -34,12 +34,10 @@ class AuthenticationController extends Controller
           'remember_me' => $request->input('remember_me', false),
         ];
 
-        $this->authenticationValidator->setParameters($data);
-        if ($this->authenticationValidator->fails())
+        if ($this->authenticationValidator->setParameters($data)->fails())
             return redirect()->back()->with('errors', $this->authenticationValidator->getErrors());
 
         $this->authenticateUser->setCredentials($data);
-
         if ($this->authenticateUser->attempt())
             return redirect()->intended('/');
         return redirect()->back()->with('errors', [0 => [self::FAILED_LOGIN]]);

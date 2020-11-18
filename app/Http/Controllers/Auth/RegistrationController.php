@@ -34,8 +34,7 @@ class RegistrationController extends Controller
             'password_confirmation'     => $request->input('password_confirmation'),
         ];
 
-        $this->createUserValidator->setParameters($data);
-        if ($this->createUserValidator->fails())
+        if ($this->createUserValidator->setParameters($data)->fails())
             return redirect()->back()->with('errors', $this->createUserValidator->getErrors());
 
         $this->createUser

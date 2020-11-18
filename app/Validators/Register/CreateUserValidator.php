@@ -15,9 +15,4 @@ class CreateUserValidator extends BaseValidator
     protected $messages     = [
         'email.unique' => 'The email :input is already registered!'
     ];
-
-    public function setParameters(array $parameters = [])
-    {
-        $this->parameters = $parameters;
-    }
 }
