@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\{
     Auth\RegistrationController,
-    Auth\AuthenticationController
+    Auth\AuthenticationController,
+    QuizzesController
 };
 
 
@@ -42,6 +43,12 @@ Route::middleware('auth')->group( function() {
     Route::get('/', function () {
         echo "Hello there!";
     })->name('home');
+
+    Route::prefix('quizzes')->group( function() {
+        Route::get('/', [QuizzesController::class, 'getIndexView'])->name('quizzes.index');
+        Route::get('create', [QuizzesController::class, 'getCreateView'])->name('quizzes.create');
+        Route::post('create', [QuizzesController::class, 'createQuiz'])->name('quizzes.store');
+    });
 
 });
 
