@@ -1,1 +1,8 @@
+// Import Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Import Variables
 @import './../variables';
+
+// Import Modules
+@import 'modules/grid';
