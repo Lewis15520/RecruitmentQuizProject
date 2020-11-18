@@ -1,9 +1,8 @@
 @extends('templates.guest')
 @section('template_content')
 
-    @if(session()->has('errors'))
-
-        @foreach(session()->get('errors') as $error)
+    @if(isset($errors))
+        @foreach($errors as $error)
             @foreach($error as $message)
                 <p>{{ $message }}</p>
             @endforeach
