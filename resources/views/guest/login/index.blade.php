@@ -10,36 +10,25 @@
             @endforeach
         @endif
 
-        <form action="{{ route('register.post') }}" method="POST">
+        <form action="{{ route('login.post') }}" method="POST">
 
             <div class="blockForm topLoader">
                 <div class="padding">
-                    <h1>Registration</h1>
-                </div>
-                <div class="padding">
-                    <p class="heading">Full Name</p>
-                    <p class="caption">Please type your full name here.</p>
-                    <input type="text" name="name" placeholder="E.g Joe Blogs" required/>
+                    <h1>Login</h1>
                 </div>
                 <div class="padding">
                     <p class="heading">Email Address</p>
-                    <p class="caption">Please provide your email address.</p>
-                    <input type="email" name="email" placeholder="E.g joe.blogs@example.com" required/>
+                    <p class="caption">Type the email address you use for the account.</p>
+                    <input type="email" name="email" required/>
                 </div>
                 <div class="padding">
                     <p class="heading">Password</p>
-                    <p class="caption">Type the password you would like to use for the account.</p>
+                    <p class="caption">Type the password you use for the account.</p>
                     <input type="password" name="password" required/>
                 </div>
-                <div class="padding">
-                    <p class="heading">Confirm Password</p>
-                    <p class="caption">Please confirm the password.</p>
-                    <input type="password" name="password_confirmation" required/>
-                </div>
-
                 <div class="padding uiRow">
                     <div class="uiCol --vertical-middle">
-                        <a href="{{ route('login.get') }}" class="dftButton --disabled">Back to login</a>
+                        <a href="{{ route('register.get') }}" class="dftButton --disabled">Register</a>
                     </div>
                     <div class="uiCol text-right --vertical-middle">
                         <button class="dftButton --primary">Submit</button>
