@@ -22,6 +22,7 @@ Route::middleware('guest')->group( function() {
 
     Route::prefix('register')->group( function() {
         Route::get('/', [RegistrationController::class, 'getView'])->name('register.get');
+        Route::post('/', [RegistrationController::class, 'registerUser'])->name('register.post');
     });
 
 });
