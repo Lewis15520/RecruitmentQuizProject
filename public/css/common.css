@@ -10903,6 +10903,12 @@ a.text-dark:focus {
   }
 }
 
+.\--fullscreen {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .uiRow {
   display: table;
   width: 100%;
@@ -10925,5 +10931,65 @@ a.text-dark:focus {
 
 .uiRow .uiCol.\--vertical-bottom {
   vertical-align: bottom;
+}
+
+form input {
+  display: block;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #E0E0E0;
+  padding: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+form input:last-of-type {
+  margin-bottom: 0;
+}
+
+form .blockForm {
+  margin-bottom: 25px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+form .blockForm .padding {
+  padding: 25px;
+}
+
+form .blockForm .heading {
+  font-size: 22px;
+  margin: 0;
+}
+
+form .blockForm .caption {
+  font-size: 15px;
+}
+
+form .blockForm input {
+  margin-bottom: 0;
+}
+
+.dftButton {
+  display: inline-block;
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 6px 15px;
+  min-width: 100px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.dftButton.\--primary {
+  background-color: #4c8bf5;
+  color: #e6f1ff;
+}
+
+.dftButton.\--disabled {
+  background-color: #E0E0E0;
+  color: #909090;
 }
 

@@ -1,0 +1,17 @@
+body {
+  background-color: #F8F8F8;
+}
+
+.topDefaultPadding {
+  padding-top: 25px;
+}
+
+#register {
+  width: 580px;
+  margin: 0 auto;
+}
+
+#register .topLoader {
+  border-top: 8px solid #303C55;
+}
+
