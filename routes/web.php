@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\{
+  Auth\RegistrationController
+};
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +18,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::middleware('guest')->group( function() {
+
+    Route::prefix('register')->group( function() {
+        Route::get('/', [RegistrationController::class, 'getView'])->name('register.get');
+        Route::post('/', [RegistrationController::class, 'registerUser'])->name('register.post');
+    });
+
 });
+
+Route::middleware('auth')->group( function() {
+
+});
+

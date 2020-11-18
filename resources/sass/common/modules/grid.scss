@@ -1,0 +1,19 @@
+.uiRow {
+
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+
+    .uiCol {
+
+        display: table-cell;
+        vertical-align: middle;
+        box-sizing: border-box;
+
+        &.--vertical-top { vertical-align: top; }
+        &.--vertical-middle { vertical-align: middle; }
+        &.--vertical-bottom { vertical-align: bottom; }
+
+    }
+
+}
