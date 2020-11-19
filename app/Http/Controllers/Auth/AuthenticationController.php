@@ -39,7 +39,7 @@ class AuthenticationController extends Controller
 
         $this->authenticateUser->setCredentials($data);
         if ($this->authenticateUser->attempt())
-            return redirect()->intended('/');
+            return redirect()->intended('/')->with('success', "Welcome {$this->authenticateUser->getUsersName()}!");
         return redirect()->back()->with('errors', [0 => [self::FAILED_LOGIN]]);
     }
 

@@ -1,0 +1,34 @@
+.contentColumn {
+
+    padding: 25px;
+
+}
+
+.headerSection {
+
+    padding: 12px 0;
+    border-bottom: 1px solid $gray;
+    position: relative;
+    margin-bottom: 20px;
+
+    h5 {
+
+        margin: 0;
+        font-weight: normal;
+        font-size: 18px;
+
+    }
+
+}
+
+.assignRight {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+}

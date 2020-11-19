@@ -27,4 +27,9 @@ class AuthenticateUser
         unset($this->credentials['remember_me']);
         return (Auth::attempt($this->credentials, $rememberMe))? true: false;
     }
+
+    public function getUsersName(): string
+    {
+        return $this->user->where('email', $this->credentials['email'])->first()->firstName();
+    }
 }

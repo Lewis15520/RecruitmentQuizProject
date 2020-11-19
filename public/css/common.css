@@ -1,11 +1,6 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@300;
 
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+400;600&display=swap);@charset "UTF-8";
 
 :root {
   --blue: #007bff;
@@ -10903,6 +10898,10 @@ a.text-dark:focus {
   }
 }
 
+body {
+  font-family: "Nunito", sans-serif;
+}
+
 .\--fullscreen {
   height: 100vh;
   width: 100%;
@@ -10936,12 +10935,12 @@ a.text-dark:focus {
 form input {
   display: block;
   margin-bottom: 10px;
-  border: none;
-  border-bottom: 2px solid #E0E0E0;
-  padding: 5px 0;
+  border: 1px solid #E0E0E0;
+  padding: 8px;
   width: 100%;
   box-sizing: border-box;
   font-size: 15px;
+  border-radius: 3px;
 }
 
 form input:last-of-type {
@@ -10949,6 +10948,7 @@ form input:last-of-type {
 }
 
 form .blockForm {
+  padding: 25px 0;
   margin-bottom: 25px;
   background-color: white;
   border-radius: 3px;
@@ -10956,11 +10956,11 @@ form .blockForm {
 }
 
 form .blockForm .padding {
-  padding: 25px;
+  padding: 15px 50px;
 }
 
 form .blockForm .heading {
-  font-size: 22px;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -10968,7 +10968,7 @@ form .blockForm .caption {
   font-size: 15px;
 }
 
-form .blockForm input {
+form .blockForm input:last-of-type {
   margin-bottom: 0;
 }
 
@@ -10982,6 +10982,10 @@ form .blockForm input {
   border-radius: 3px;
   font-size: 15px;
   text-align: center;
+}
+
+.dftButton i {
+  margin-right: 10px;
 }
 
 .dftButton.\--primary {

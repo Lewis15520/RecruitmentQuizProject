@@ -1,7 +1,14 @@
-#register {
+#login {
 
     width: 440px;
     margin: 0 auto;
+
+    a {
+
+        display: inline-block;
+        font-size: 15px;
+
+    }
 
     img {
 
@@ -10,13 +17,6 @@
         display: block;
         text-align: center;
         margin: 0 auto 50px auto;
-
-    }
-
-    a {
-
-        display: inline-block;
-        font-size: 15px;
 
     }
 

@@ -1,7 +1,7 @@
 @extends('templates.guest')
 @section('template_content')
 
-    <div id="register">
+    <div id="login">
         @if(isset($errors))
             @foreach($errors as $error)
                 @foreach($error as $message)
@@ -14,24 +14,19 @@
 
             <div class="blockForm topLoader">
                 <div class="padding">
-                    <h1>Login</h1>
+                    <img src="{{ asset('images/logo.png') }}" alt="logo"/>
+                    <h5 class="text-center">Sign in using your {{ env('APP_NAME') }} account</h5>
                 </div>
                 <div class="padding">
-                    <p class="heading">Email Address</p>
-                    <p class="caption">Type the email address you use for the account.</p>
-                    <input type="email" name="email" required/>
-                </div>
-                <div class="padding">
-                    <p class="heading">Password</p>
-                    <p class="caption">Type the password you use for the account.</p>
-                    <input type="password" name="password" required/>
+                    <input type="email" name="email" placeholder="Email Address" required/>
+                    <input type="password" name="password" placeholder="Password" required/>
                 </div>
                 <div class="padding uiRow">
                     <div class="uiCol --vertical-middle">
-                        <a href="{{ route('register.get') }}" class="dftButton --disabled">Register</a>
+                        <a href="{{ route('register.get') }}">Create Account</a>
                     </div>
                     <div class="uiCol text-right --vertical-middle">
-                        <button class="dftButton --primary">Submit</button>
+                        <button class="dftButton --primary">Sign in</button>
                     </div>
                 </div>
 
@@ -40,6 +35,7 @@
             {{ csrf_field() }}
 
         </form>
+        <p class="text-center loginInfo">{{ env('APP_NAME') }}, All Rights Reserved</p>
     </div>
 
 @endsection

@@ -6,12 +6,49 @@ body {
   padding-top: 25px;
 }
 
-#register {
-  width: 580px;
+#login {
+  width: 440px;
   margin: 0 auto;
 }
 
-#register .topLoader {
-  border-top: 8px solid #303C55;
+#login a {
+  display: inline-block;
+  font-size: 15px;
+}
+
+#login img {
+  width: 70px;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto 50px auto;
+}
+
+#login .loginInfo {
+  font-size: 14px;
+  color: #909090;
+}
+
+#register {
+  width: 440px;
+  margin: 0 auto;
+}
+
+#register img {
+  width: 70px;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto 50px auto;
+}
+
+#register a {
+  display: inline-block;
+  font-size: 15px;
+}
+
+#register .loginInfo {
+  font-size: 14px;
+  color: #909090;
 }
 

@@ -1,0 +1,168 @@
+.profile .dropdown-toggle {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.profile .dropdown-toggle:focus {
+  outline: none;
+}
+
+.profile .dropdown-toggle::after {
+  display: none;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.dropdownMenu {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px 0px, rgba(0, 0, 0, 0.3) 0px 0px 1px 0px;
+  border: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.dropdownMenu .profileScript {
+  padding: 15px 25px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.dropdownMenu .profileScript p {
+  font-size: 14px;
+  margin: 0 0 3px 20px;
+}
+
+.dropdownMenu .profileScript p:last-of-type {
+  margin-bottom: 0;
+}
+
+.dropdownMenu .profileScript img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.dropdownMenu .dropdown-item {
+  padding: 10px 0;
+  font-size: 15px;
+  display: block;
+  vertical-align: middle;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.dropdownMenu .dropdown-item i {
+  width: 110px;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+header {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 0 25px;
+  height: 70px;
+}
+
+header .uiRow {
+  position: relative;
+  height: 100%;
+}
+
+header .logoCol {
+  width: 250px;
+}
+
+header .searchCol {
+  width: 600px;
+}
+
+header .searchCol input {
+  background-color: #E0E0E0;
+  color: #909090;
+  border: none;
+}
+
+header .searchCol button {
+  border: none;
+  background-color: #E0E0E0;
+  color: #909090;
+}
+
+header img {
+  height: 35px;
+  width: auto;
+  display: inline-block;
+}
+
+header .title {
+  display: inline-block;
+  font-size: 24px;
+  margin: 0 0 0 10px;
+  vertical-align: middle;
+}
+
+.sidebarColumn {
+  width: 275px;
+  min-height: calc(100vh - 70px);
+  height: calc(100vh - 70px);
+  border-right: 1px solid #E0E0E0;
+  padding: 25px 0;
+}
+
+.sidebarColumn ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarColumn ul li {
+  display: block;
+}
+
+.sidebarColumn ul li a {
+  display: block;
+  padding: 12px 25px;
+  color: #909090;
+  font-size: 14px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.sidebarColumn ul li a i {
+  width: 40px;
+  font-size: 18px;
+  vertical-align: text-bottom;
+}
+
+.sidebarColumn ul li a.active {
+  background-color: #e8f0fe;
+  color: #1967d2;
+}
+
+.contentColumn {
+  padding: 25px;
+}
+
+.headerSection {
+  padding: 12px 0;
+  border-bottom: 1px solid #E0E0E0;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.headerSection h5 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.assignRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+

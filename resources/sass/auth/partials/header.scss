@@ -1,0 +1,59 @@
+header {
+
+    border-bottom: 1px solid $gray;
+    padding: 0 25px;
+    height: 70px;
+
+    .uiRow {
+
+        position: relative;
+        height: 100%;
+
+    }
+
+    .logoCol {
+
+        width: 250px;
+
+    }
+
+    .searchCol {
+
+        width: 600px;
+
+        input {
+
+            background-color: $lightGray;
+            color: $darkGray;
+            border: none;
+
+        }
+
+        button {
+
+            border: none;
+            background-color: $lightGray;
+            color: $darkGray;
+
+        }
+
+    }
+
+    img {
+
+        height: 35px;
+        width: auto;
+        display: inline-block;
+
+    }
+
+    .title {
+
+        display: inline-block;
+        font-size: 24px;
+        margin: 0 0 0 10px;
+        vertical-align: middle;
+
+    }
+
+}

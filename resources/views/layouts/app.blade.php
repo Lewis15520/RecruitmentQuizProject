@@ -6,4 +6,5 @@
     <body>
         @yield('app_content')
     </body>
+    @include('layouts.scripts')
 </html>
